@@ -5,43 +5,84 @@
 body{
     width: 100%;
 }
-.dialog-box {
-    background-image: url(../images/dialogBox.png);
-    height: 480px;
-    background-repeat: no-repeat;
-    width: 1300px;
-    font-family: Stardew Valley; 
+.botoes{
+    float: right;
+    padding-right: 15%;
 }
+.botoes p{
+    padding-left: 17px;
+    position: absolute;
+    padding-top: 60px;
+    font-family: Stardew Valley;
+    line-height: 1;
+    font-size: 20px;
+}
+.botoes img {
+    height: 100px;
+    padding-right: 20%; 
+    margin-top: 30px;
+}
+
+.dialog-box {   
+    font-family: Stardew Valley; 
+    height: 300px;
+    position: absolute;
+    width: 520px;
+    height: 300px;
+    left: 25%;
+    right: 25%;
+    top: 70%;
+}
+
 .text-box{
     z-index:2;
-    position: absolute;
+    position: absolute; 
+    margin: 0;
     font-size: 20px;
     padding-top: 30px;
-    padding-left: 70px;
+    padding-left: 70px; 
+    width: 450px; 
+    z-index: 2;
+    position: absolute;
 } 
-.text-box image { 
+.text-box p { 
+    font-size: 25px;
+    position: absolute; 
+    margin-top: 35px;
+}
+.text-box .icon { 
     height: auto; 
-    z-index:2;
+    z-index: 2;
+    position: absolute;
+} 
+
+.character { 
+    right: 0;
     position: absolute;
 }
-.text-box {
-    font-size: 2em;
-    /* width: 770px;  */
-    width: 65%;
+.character .icon{  
+    z-index: 2;
+    position: absolute;
+    width: 150px;   
+    margin-top: 40px;
+} 
+.character img{
+    margin-left: 15px;
 }
-.character {
-    float: right;
-    font-size: 2em; 
-    width: 35%; 
-    /* arrumar o espaçamento */
-    /* width: 450px; */
+.character p { 
+    position: absolute;
+    padding-top: 200px;
+    z-index: 2;
+    padding-left: 40px;
+    font-size: 30px; 
+     
 }
-.character img {  
-    width: 260px; 
-    padding-top: 60px;
-    padding-right: 150px;
+#texto-jornada button {
     font-size: 50px;
+    position: absolute;
 }
-.character p {
-    padding-top: 0;
+
+.bg img{
+    height: 270px;
+    position: absolute; 
 }

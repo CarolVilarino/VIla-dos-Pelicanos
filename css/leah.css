@@ -1,0 +1,12 @@
+body { 
+    background-image: url(../images/cabanaLeah.png); 
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+}
+
+.text-box p { 
+    margin-top: 0 !important;
+}

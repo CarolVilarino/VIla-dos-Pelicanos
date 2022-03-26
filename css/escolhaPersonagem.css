@@ -1,0 +1,51 @@
+body { 
+    background-image: url(../images/background-noite2.jpg); 
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+}
+
+.personagens {
+    padding-top: 100px;
+    margin-left: 15%;
+    margin-right: 25%;
+    display: block; 
+    width: 265px;
+}
+
+.personagem img {
+    height: 200px;
+    width: 230px; 
+    transition: 1s;
+    margin-top: 20px;
+}
+.personagem img:hover{
+    height: 225px;
+    width: 265px;
+    transform: scale();
+    transition: 1s;
+}
+
+.hide {
+    display: none;
+} 
+.personagem p {
+    font-family: Stardew Valley; 
+    position: absolute;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 40px;
+    padding: 10px;
+    color: #000;
+    text-shadow: hsl(47, 4%, 48%);
+    font-size: 24px;
+    line-height: 1;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur( 3.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
