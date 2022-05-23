@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/menu-missoes.css">
     <link rel="stylesheet" href="../css/wizard.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/dialogBox.css">
@@ -49,14 +50,38 @@
     </header>
 
     <main>
-        <div class="container">   
+        <div class="container" id="bg">   
     
             <div class="dialog-box"> 
 
                 <div class="text-box" id="texto-jornada"> 
                     <p id="textoMuda"> 
-                        RAIOS!!! Eu perdi novamente a minha pedra de teletransporte. Lembro de ter deixado ela em minha biblioteca, logo que voltei da minha ultima viagem.  
-                        <button id="zeroUm" onclick="changeText1()">....</button>
+                        <span class="texto-um">
+                            RAIOS!!! Eu perdi novamente a minha pedra de teletransporte. Lembro de ter deixado ela em minha biblioteca, logo que voltei da minha ultima viagem.  
+                            <button class="zeroUm" onclick="mudaTexto()">....</button>
+                        </span>
+
+                        <span class="texto-dois invisible">
+                        Agora eu preciso que você me ajude! Você poderia ir até a minha biblioteca ?  
+                            <br> 1) Ir até a biblioteca 
+                            <br> 2) Jogar algo na cara do Wizard 
+                            <br> 3) Ir Embora"; 
+                            <button id="zeroDois" onclick="escolhaUm()"> ... Responder </button> 
+                        </span>
+
+                        <span class="texto-tres invisible">
+                            O Mago pediu para que você procura-se sua pedra, porém ao chegar a biblioteca você encontra muitos livros e bagunça! 
+                            Você vê três pilhas 
+                            <button id="zeroTresMuda" onclick="escolhaDoisMuda()"> ...  </button>  
+                        </span>
+                        <div class="texto-tres-a invisible">
+                            Qual delas você deseja escolher? <br><br>
+                            1) uma de livros, <br> 
+                            2) uma de roupas sujas <small>eeeww</small> <br> 
+                            3) e uma de pergaminhos antigos.
+                            <button id="zeroTresA" onclick="escolhaDois()"> ...  </button> 
+                        </div>
+
                     </p>
                 </div>
 
@@ -73,7 +98,9 @@
 
     
     
-    <script src="../javascript.js"></script>
+    <script src="../app.js"></script>
     <script src="../js/wizard.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </body>
 </html>

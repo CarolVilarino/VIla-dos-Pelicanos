@@ -1,0 +1,21 @@
+
+  
+header {
+    height: 160px;
+}
+
+#bg { 
+  height: 900px;
+  width: 100%;
+  background-repeat: no-repeat;  
+  margin-top: -50px;
+}
+.botoes {
+    position: fixed;
+    right: 0;
+}
+@media only screen and (max-width: 810px) {
+    #bg {
+        margin-top: 0;
+    }
+}

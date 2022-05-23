@@ -21,6 +21,9 @@ body {
     100% { transform: translateY(0); }
 }
 
+header {
+    height: 160px ;
+}
 button { 
     border: none;
     background-color: transparent; 

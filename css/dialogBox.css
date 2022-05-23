@@ -43,12 +43,12 @@ body{
     padding-left: 70px; 
     width: 450px; 
     z-index: 2;
-    position: absolute;
+    position: absolute;  
 } 
 .text-box p { 
     font-size: 25px;
     position: absolute; 
-    margin-top: 35px;
+    margin-top: 16px;
 }
 .text-box .icon { 
     height: auto; 

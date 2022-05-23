@@ -1,22 +1,53 @@
+$(document).ready( function() {
+     
+});
 
+function mudaTexto () {
+    $(".zeroUm").click(function() {
+        $('.texto-um').hide()
+        $('.texto-dois').removeClass('invisible').addClass('visible');
+    });
+}
+function escolhaUmMuda () {  
+    $('.texto-dois').hide()
+    $('.texto-tres').removeClass('invisible').addClass('visible')
+}
 
-function changeText1 () {
-    document.getElementById("textoMuda").innerHTML = "Agora eu preciso que você me ajude! Você poderia ir até a minha biblioteca ?  <br> 1) Ir até a biblioteca <br> 2) Jogar algo na cara do Wizard <br> 3) Ir Embora";  
+function escolhaUm () {
+    
     var escolha1 = prompt("Qual sera a sua escolha ?")
+ 
 
-    var tentativas = 2;
-    var tentou = 0;
-    while (tentou <= tentativas ) {
-
-        if (escolha1 == 1) {
-            alert ("Otimo, agora preciso que me ajude a invocar uma Spell. Há boatos de um lobisomen na cidade e quero combatelo")
-            window.location.href="../html/fases/fase-um-wizard.html"
-            
-        } else if ( escolha1 == 1 ) {
-            alert ("Você me decepcionou, saia de minha casa!")
-            window.location.href="../html/escolhaPersonagem.html" 
-        }
+    if (escolha1 == 1) {  
+        escolhaUmMuda()   
+    } else if ( escolha1 == 2 ) {
+        alert ("Você me decepcionou, saia de minha casa!")
+        window.location.href="../html/escolhaPersonagem.html" 
+    } else {
+        alert ('Você decidiu não ajudar o mago e ele ficou com raiva de você')
+        window.location.href='../html/finalmagoUm.hmtl'
     }
 }
 
- 
+function escolhaDoisMuda() {
+    $('#zeroTresMuda').click(function (){
+        $('.texto-tres').hide()
+        $('.texto-tres-a').removeClass('invisible').addClass('visible')
+    })
+}
+
+function escolhaDois () {
+    var escolha2 = prompt('O que deseja fazer?')
+
+    if (escolha2 == 1) {  
+        alert ('Você achou livros muito interessantes e ficou por horas perdido no mundo, o mago até esqueceu da sua existência e quando você se deu conta já era noite') 
+        window.location.href='../html/fases/finalmagoUm.html'
+    } else if ( escolha2 == 2 ) {
+        alert ("Era uma armadilha hahaha, o mago não precisava de pedra alguma. Agora você terá de arrumar a bagunça dele, caso o contrário você irá virar um sapo...Bom, é o que diz no bihete misterioso em cima da pilha de roupa") 
+        window.location.href='../html/fases/finalMagoUM.html'
+    } else {
+        alert ('Você encontrou a pedra e agora poderá ajudar o mago. Todo mundo da vila sabe como ele é muito misterioso, talvez você ganhe recompensas maravlhosas')
+        window.location.href='../html/fases/FinalMagoTres.html'
+    }
+
+}
